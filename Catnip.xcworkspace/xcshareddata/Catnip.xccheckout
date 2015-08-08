@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8ED4FBCA-F968-42CD-9F7C-E0990CA93F2C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Catnip</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DF744269BBA05DC5355968B863D26C72BCAEDB65</key>
+		<string>https://github.com/AdamBCo/Catnip.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Catnip.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DF744269BBA05DC5355968B863D26C72BCAEDB65</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AdamBCo/Catnip.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DF744269BBA05DC5355968B863D26C72BCAEDB65</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF744269BBA05DC5355968B863D26C72BCAEDB65</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Catnip</string>
+		</dict>
+	</array>
+</dict>
+</plist>
