@@ -28,6 +28,7 @@
 		87680F0E1B76A600007F0D24 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87680F0D1B76A600007F0D24 /* Social.framework */; };
 		87680F121B76A626007F0D24 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87680F101B76A626007F0D24 /* Bolts.framework */; };
 		87680F131B76A626007F0D24 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87680F111B76A626007F0D24 /* Parse.framework */; };
+		87680F161B76A898007F0D24 /* CNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 87680F151B76A898007F0D24 /* CNUser.m */; };
 		F86979BEC92074B47F4B8ADF /* libPods-Catnip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F8F618E7CA34B7B95E4F6F /* libPods-Catnip.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		87680F0D1B76A600007F0D24 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		87680F101B76A626007F0D24 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		87680F111B76A626007F0D24 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		87680F141B76A898007F0D24 /* CNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNUser.h; sourceTree = "<group>"; };
+		87680F151B76A898007F0D24 /* CNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				87680ED61B76A437007F0D24 /* AppDelegate.m */,
 				87680ED81B76A437007F0D24 /* ViewController.h */,
 				87680ED91B76A437007F0D24 /* ViewController.m */,
+				87680F141B76A898007F0D24 /* CNUser.h */,
+				87680F151B76A898007F0D24 /* CNUser.m */,
 				87680EDB1B76A437007F0D24 /* Main.storyboard */,
 				87680EDE1B76A437007F0D24 /* Images.xcassets */,
 				87680EE01B76A437007F0D24 /* LaunchScreen.xib */,
@@ -346,6 +351,7 @@
 				87680EDA1B76A437007F0D24 /* ViewController.m in Sources */,
 				87680ED71B76A437007F0D24 /* AppDelegate.m in Sources */,
 				87680ED41B76A437007F0D24 /* main.m in Sources */,
+				87680F161B76A898007F0D24 /* CNUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
