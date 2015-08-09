@@ -14,6 +14,8 @@
 @property (nonatomic, strong) UILabel *topLabel;
 @property (nonatomic, strong) UILabel *nameAgeLabel;
 @property (nonatomic, strong) UIView *catAmountView;
+@property (nonatomic, strong) UIButton *thumbUpButton;
+@property (nonatomic, strong) UIButton *thumbDownButton;
 
 @end
 
@@ -25,6 +27,8 @@
     [self.view addSubview:self.topLabel];
     [self.view addSubview:self.nameAgeLabel];
     [self.view addSubview:self.catAmountView];
+    [self.view addSubview:self.thumbUpButton];
+    [self.view addSubview:self.thumbDownButton];
 
 
 }
@@ -32,6 +36,22 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(UIButton *)thumbUpButton {
+    if (!_thumbUpButton) {
+        _thumbUpButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width*.25, self.view.frame.size.height*.8, self.view.frame.size.width*.25, 100)];
+        [_thumbUpButton setImage:[UIImage imageNamed:@"thumbsUp"] forState:UIControlStateNormal];
+    }
+    return _thumbUpButton;
+}
+
+-(UIButton *)thumbDownButton {
+    if (!_thumbDownButton) {
+        _thumbDownButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width*.5, self.view.frame.size.height*.8, self.view.frame.size.width*.25, 100)];
+        [_thumbDownButton setImage:[UIImage imageNamed:@"thumbsDown"] forState:UIControlStateNormal];
+    }
+    return _thumbDownButton;
 }
 
 -(UIView *)catAmountView {
