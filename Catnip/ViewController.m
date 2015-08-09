@@ -11,6 +11,8 @@
 
 @interface ViewController () <MDCSwipeToChooseDelegate>
 @property (nonatomic, strong) MDCSwipeToChooseView *swipeView;
+@property (nonatomic, strong) UILabel *topLabel;
+@property (nonatomic, strong) UILabel *nameAgeLabel;
 
 @end
 
@@ -19,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.swipeView];
+    [self.view addSubview:self.topLabel];
+    [self.view addSubview:self.nameAgeLabel];
 
 
 }
@@ -26,6 +30,25 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(UILabel *)nameAgeLabel {
+    if (!_nameAgeLabel) {
+        _nameAgeLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, self.swipeView.frame.size.height + self.topLabel.frame.size.height, 100, 50)];
+        [_nameAgeLabel setText:@"Charles, 61"];
+    }
+    return _nameAgeLabel;
+}
+
+-(UILabel *)topLabel {
+    if (!_topLabel) {
+        _topLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50)];
+        [_topLabel setBackgroundColor:[UIColor orangeColor]];
+        [_topLabel setTextColor:[UIColor whiteColor]];
+        [_topLabel setTextAlignment:NSTextAlignmentCenter];
+        [_topLabel setText:@"CatNip"];
+    }
+    return _topLabel;
 }
 
 -(MDCSwipeToChooseView *)swipeView {
@@ -43,7 +66,7 @@
             }
         };
 
-        _swipeView = [[MDCSwipeToChooseView alloc] initWithFrame:self.view.bounds
+        _swipeView = [[MDCSwipeToChooseView alloc] initWithFrame:CGRectMake(0, self.topLabel.frame.size.height, self.view.frame.size.width, 400)
                                                          options:options];
         _swipeView.imageView.image = [UIImage imageNamed:@"testImage"];
 
