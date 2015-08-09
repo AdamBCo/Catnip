@@ -13,6 +13,7 @@
 @property (nonatomic, strong) MDCSwipeToChooseView *swipeView;
 @property (nonatomic, strong) UILabel *topLabel;
 @property (nonatomic, strong) UILabel *nameAgeLabel;
+@property (nonatomic, strong) UIView *catAmountView;
 
 @end
 
@@ -23,6 +24,7 @@
     [self.view addSubview:self.swipeView];
     [self.view addSubview:self.topLabel];
     [self.view addSubview:self.nameAgeLabel];
+    [self.view addSubview:self.catAmountView];
 
 
 }
@@ -32,10 +34,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(UIView *)catAmountView {
+    if (!_catAmountView) {
+        _catAmountView = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width-100, self.swipeView.frame.size.height + self.topLabel.frame.size.height, 100, 50)];
+        UIImageView *catIconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        [catIconImageView setImage:[UIImage imageNamed:@"catOutline"]];
+        [_catAmountView addSubview:catIconImageView];
+
+        UILabel *catQuantityLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 17, 50, 50)];
+        [catQuantityLabel setText:@"'s: 3"];
+        [catQuantityLabel setTextColor:[UIColor orangeColor]];
+        [_catAmountView addSubview:catQuantityLabel];
+    }
+    return _catAmountView;
+}
+
 -(UILabel *)nameAgeLabel {
     if (!_nameAgeLabel) {
-        _nameAgeLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, self.swipeView.frame.size.height + self.topLabel.frame.size.height, 100, 50)];
+        _nameAgeLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, self.swipeView.frame.size.height + self.topLabel.frame.size.height + 8, self.view.frame.size.width-100, 50)];
         [_nameAgeLabel setText:@"Charles, 61"];
+        [_nameAgeLabel setFont:[UIFont fontWithName:@"Helvetica-BoldOblique" size:21.0]];
     }
     return _nameAgeLabel;
 }
