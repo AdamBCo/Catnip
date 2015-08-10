@@ -23,14 +23,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.swipeView];
     [self.view addSubview:self.topLabel];
     [self.view addSubview:self.nameAgeLabel];
     [self.view addSubview:self.catAmountView];
     [self.view addSubview:self.thumbUpButton];
     [self.view addSubview:self.thumbDownButton];
-
-
+    [self.view addSubview:self.swipeView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
